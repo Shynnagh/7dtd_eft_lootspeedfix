@@ -20,11 +20,11 @@ namespace ActionSkillHook
             
             float current_count = player.Buffs.GetCustomVar(cvar_loot_counter_name);         
             player.Buffs.SetCustomVar(cvar_loot_counter_name, current_count + 1f);
-            Debug.Log($"[LuckyLooterHook] {cvar_loot_counter_name} = {current_count:0}");
+            //Debug.Log($"[LuckyLooterHook] {cvar_loot_counter_name} = {current_count:0}");
 
             float speed_bonus = Math.Min((current_count + 1f) * 0.00016f, 0.8f);
             player.Buffs.SetCustomVar(cvar_loot_speed_name, speed_bonus);
-            Debug.Log($"[LuckyLooterHook] {cvar_loot_speed_name} = {speed_bonus:0.000}");
+            //Debug.Log($"[LuckyLooterHook] {cvar_loot_speed_name} = {speed_bonus:0.000}");
 
         }
     }

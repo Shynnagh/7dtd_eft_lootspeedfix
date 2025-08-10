@@ -14,7 +14,7 @@ namespace ActionSkillHook
         {
             get
             {
-                return _harmony_instance ?? (_harmony_instance = new Harmony("com.reynard.actionskillhook"));
+                return _harmony_instance ?? (_harmony_instance = new Harmony("com.shynnagh.actionskillhook"));
             }
         }
         public void InitMod(Mod mod_instance)

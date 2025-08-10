@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<Name value="LuckyLooterFix" />
+	<DisplayName value="LuckyLooterFix" />
+	<Description value="Fixes Lucky Looter action skill for multiplayer" />
+	<Author value="Shynnagh" />
+	<Version value="1.0.0" />
+
+</xml>

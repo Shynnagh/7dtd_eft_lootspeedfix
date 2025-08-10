@@ -1,0 +1,12 @@
+<configs>
+    <!-- Remove ActionSkill loot progression triggered_effects -->
+
+    <!-- onSelfOpenLootContainer trigger (broken) -->
+    <remove xpath="/buffs/buff[@name='buffEftASkillsAndLBD']/effect_group/triggered_effect[@trigger='onSelfOpenLootContainer' and @action='ModifyCVar' and @cvar='$ASkill_General_OpenedLootContainers']" />
+
+    <!-- onSelfBuffUpdate triggers tied to loot speed bonus -->
+    <remove xpath="/buffs/buff[@name='buffEftASkillsAndLBD']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='ModifyCVar' and @cvar='$ASkill_General_LootContainerOpenSpeedBonus' and @operation='set' and @value='@$ASkill_General_OpenedLootContainers']" />
+    <remove xpath="/buffs/buff[@name='buffEftASkillsAndLBD']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='ModifyCVar' and @cvar='$ASkill_General_LootContainerOpenSpeedBonus' and @operation='multiply']" />
+    <remove xpath="/buffs/buff[@name='buffEftASkillsAndLBD']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='ModifyCVar' and @cvar='$ASkill_General_LootContainerOpenSpeedBonus' and @operation='set' and @value='.8']" />
+
+</configs>
